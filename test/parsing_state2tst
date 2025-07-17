@@ -1,0 +1,38 @@
+import csv
+
+def parse_factoryio_csv(file_path):
+    results = []
+    with open(file_path, newline='', encoding='utf-8-sig') as csvfile:
+        reader = csv.DictReader(csvfile)
+        print("Headers detected:", reader.fieldnames)
+        for row in reader:
+            print("Row:", row)  # Debug print each row
+            variable = row.get("Name")
+            io_type = row.get("Type")
+            data_type = row.get("Data Type")
+            address = row.get("Address")
+
+            if not variable or not io_type or not data_type or not address:
+                continue
+
+            variable = variable.strip()
+            io_type = io_type.strip()
+            data_type = data_type.strip()
+            address = address.strip()
+
+            entry = {
+                "Variable": variable,
+                "Type": io_type,
+                "Data Type": data_type,
+                "Address": address
+            }
+            print("Processed entry:", entry)  # Debug print processed entry
+
+            results.append(entry)
+
+    return results
+
+if __name__ == "__main__":
+    data = parse_factoryio_csv("C:/Users/Duki/codesys-xml-autogen/data/tags.csv")
+    for item in data:
+        print(item)

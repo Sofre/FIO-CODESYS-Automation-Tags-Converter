@@ -1,0 +1,3 @@
+﻿Name,Type,Data Type,Address
+Sensor,Input,Bool,Input 0
+FACTORY I/O (Running),Input,Bool,Input 1

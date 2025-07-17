@@ -1,0 +1,23 @@
+//CoDeSys Mapping Export V1.2
+"//Mapped variable,//Parameter name @ counter in device,//Unit,//Description,//IEC address,//Device name"
+"//Important: change only first, third or fourth column in Excel or add variable name before first"
+,Channel 0,,Read Discrete Inputs,%IB00,Modbus_TCP_Server
+,Channel 0[0],,Read Discrete Inputs,%IB00,Modbus_TCP_Server
+ItemEntry,Bit0,,0x0000,%IX0.0,Modbus_TCP_Server
+ItemExit,Bit1,,0x0001,%IX0.1,Modbus_TCP_Server
+MovingX,Bit2,,0x0002,%IX0.2,Modbus_TCP_Server
+MovingZ,Bit3,,0x0003,%IX0.3,Modbus_TCP_Server
+Itemdet,Bit4,,0x0004,%IX0.4,Modbus_TCP_Server
+Start,Bit5,,0x0005,%IX0.5,Modbus_TCP_Server
+Reset,Bit6,,0x0006,%IX0.6,Modbus_TCP_Server
+Stop,Bit7,,0x0007,%IX0.7,Modbus_TCP_Server
+,Channel 1,,Write Multiple Coils,%IQ10,Modbus_TCP_Server
+,Channel 1[0],,Write Multiple Coils,%IQ10,Modbus_TCP_Server
+EntryCon,Bit0@1,,0x0000,%QX0.0,Modbus_TCP_Server
+ExitCon,Bit1@1,,0x0001,%QX0.1,Modbus_TCP_Server
+MoveX,Bit2@1,,0x0002,%QX0.2,Modbus_TCP_Server
+MoveY,Bit3@1,,0x0003,%QX0.3,Modbus_TCP_Server
+Grab,Bit4@1,,0x0004,%QX0.4,Modbus_TCP_Server
+SLight,Bit5@1,,0x0005,%QX0.5,Modbus_TCP_Server
+RLight,Bit6@1,,0x0006,%QX0.6,Modbus_TCP_Server
+StopLight,Bit7@1,,0x0007,%QX0.7,Modbus_TCP_Server

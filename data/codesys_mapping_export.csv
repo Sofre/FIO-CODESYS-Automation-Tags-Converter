@@ -1,0 +1,7 @@
+//CoDeSys Mapping Export V1.2
+"//Mapped variable,//Parameter name @ counter in device,//Unit,//Description,//IEC address,//Device name"
+"//Important: change only first, third or fourth column in Excel or add variable name before first"
+,Channel 0,,Read Discrete Inputs,%IB00,Modbus_TCP_Server
+,Channel 0[0],,Read Discrete Inputs,%IB00,Modbus_TCP_Server
+Sensor,Bit0,,0x0000,%IX0.0,Modbus_TCP_Server
+FACTORY I/O (Running),Bit1,,0x0001,%IX0.1,Modbus_TCP_Server

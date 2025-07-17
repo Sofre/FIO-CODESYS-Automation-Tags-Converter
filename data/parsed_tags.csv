@@ -1,0 +1,27 @@
+Variable,Type,Data Type,IEC_Address,Channel,BitIndex
+Lids at entry,Input,Bool,%IX0.0,0,0
+Lids center (busy),Input,Bool,%IX0.1,0,1
+Lids center (has error),Input,Bool,%IX0.2,0,2
+Lids at exit,Input,Bool,%IX0.3,0,3
+Bases at entry,Input,Bool,%IX0.4,0,4
+Bases center (busy),Input,Bool,%IX0.5,0,5
+Bases center (has error),Input,Bool,%IX0.6,0,6
+Bases at exit,Input,Bool,%IX0.7,0,7
+FACTORY I/O (Running),Input,Bool,%IX1.0,0,0
+Lids raw conveyor,Output,Bool,%QX0.0,1,0
+Lids center (produce lids),Output,Bool,%QX0.1,1,1
+Lids center (start),Output,Bool,%QX0.2,1,2
+Lids center (reset),Output,Bool,%QX0.3,1,3
+Lids center (stop),Output,Bool,%QX0.4,1,4
+Lids exit conveyor 1,Output,Bool,%QX0.5,1,5
+Lids exit conveyor 2,Output,Bool,%QX0.6,1,6
+Bases raw conveyor,Output,Bool,%QX0.7,1,7
+Bases center (produce lids),Output,Bool,%QX1.0,1,0
+Bases center (start),Output,Bool,%QX1.1,1,1
+Bases center (reset),Output,Bool,%QX1.2,1,2
+Bases center (stop),Output,Bool,%QX1.3,1,3
+Bases exit conveyor 1,Output,Bool,%QX1.4,1,4
+Bases exit conveyor 2,Output,Bool,%QX1.5,1,5
+Exit conveyor,Output,Bool,%QX1.6,1,6
+Lids counter,Output,Int,%QX1.7,1,7
+Bases counter,Output,Int,%QX2.0,1,0
