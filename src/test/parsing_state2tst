@@ -33,6 +33,6 @@ def parse_factoryio_csv(file_path):
     return results
 
 if __name__ == "__main__":
-    data = parse_factoryio_csv("C:/Users/Duki/codesys-xml-autogen/data/tags.csv")
+    data = parse_factoryio_csv("C:/Users/Duki/codesys-xml-autogen/data/Tags_Production Line.csv")
     for item in data:
         print(item)

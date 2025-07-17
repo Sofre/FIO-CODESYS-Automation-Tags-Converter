@@ -123,6 +123,18 @@ def export_codesys_mapping(tags, filename):
 
     print(f"CoDeSys mapping exported to: {filename}")
 
+
+def process_files(input_path, parsed_output_path, export_output_path):
+    # Step 1: Parse factoryio CSV
+    tags = parse_factoryio_csv(input_path)
+
+    # Step 2: Save parsed tags
+    save_parsed_tags(tags, parsed_output_path)
+
+    # Step 3: Export to CoDeSys mapping format
+    export_codesys_mapping(tags, export_output_path)
+
+
 if __name__ == "__main__":
     input_path = "C:/Users/Duki/codesys-xml-autogen/data/tags.csv"
     parsed_output_path = "C:/Users/Duki/codesys-xml-autogen/data/new_tags.csv"

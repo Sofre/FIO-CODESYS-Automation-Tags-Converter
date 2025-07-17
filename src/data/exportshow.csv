@@ -1,0 +1,33 @@
+//CoDeSys Mapping Export V1.2
+"//Mapped variable,//Parameter name @ counter in device,//Unit,//Description,//IEC address,//Device name"
+"//Important: change only first, third or fourth column in Excel or add variable name before first"
+,Channel 0,,Read Discrete Inputs,%IB00,Modbus_TCP_Server
+,Channel 0[0],,Read Discrete Inputs,%IB00,Modbus_TCP_Server
+Lids at entry,Bit0,,0x0000,%IX0.0,Modbus_TCP_Server
+Lids center (busy),Bit1,,0x0001,%IX0.1,Modbus_TCP_Server
+Lids center (has error),Bit2,,0x0002,%IX0.2,Modbus_TCP_Server
+Lids at exit,Bit3,,0x0003,%IX0.3,Modbus_TCP_Server
+Bases at entry,Bit4,,0x0004,%IX0.4,Modbus_TCP_Server
+Bases center (busy),Bit5,,0x0005,%IX0.5,Modbus_TCP_Server
+Bases center (has error),Bit6,,0x0006,%IX0.6,Modbus_TCP_Server
+Bases at exit,Bit7,,0x0007,%IX0.7,Modbus_TCP_Server
+FACTORY I/O (Running),Bit0,,0x0000,%IX1.0,Modbus_TCP_Server
+,Channel 1,,Write Multiple Coils,%IQ10,Modbus_TCP_Server
+,Channel 1[0],,Write Multiple Coils,%IQ10,Modbus_TCP_Server
+Lids raw conveyor,Bit0@1,,0x0000,%QX0.0,Modbus_TCP_Server
+Lids center (produce lids),Bit1@1,,0x0001,%QX0.1,Modbus_TCP_Server
+Lids center (start),Bit2@1,,0x0002,%QX0.2,Modbus_TCP_Server
+Lids center (reset),Bit3@1,,0x0003,%QX0.3,Modbus_TCP_Server
+Lids center (stop),Bit4@1,,0x0004,%QX0.4,Modbus_TCP_Server
+Lids exit conveyor 1,Bit5@1,,0x0005,%QX0.5,Modbus_TCP_Server
+Lids exit conveyor 2,Bit6@1,,0x0006,%QX0.6,Modbus_TCP_Server
+Bases raw conveyor,Bit7@1,,0x0007,%QX0.7,Modbus_TCP_Server
+Bases center (produce lids),Bit0@1,,0x0000,%QX1.0,Modbus_TCP_Server
+Bases center (start),Bit1@1,,0x0001,%QX1.1,Modbus_TCP_Server
+Bases center (reset),Bit2@1,,0x0002,%QX1.2,Modbus_TCP_Server
+Bases center (stop),Bit3@1,,0x0003,%QX1.3,Modbus_TCP_Server
+Bases exit conveyor 1,Bit4@1,,0x0004,%QX1.4,Modbus_TCP_Server
+Bases exit conveyor 2,Bit5@1,,0x0005,%QX1.5,Modbus_TCP_Server
+Exit conveyor,Bit6@1,,0x0006,%QX1.6,Modbus_TCP_Server
+Lids counter,Bit7@1,,0x0007,%QX1.7,Modbus_TCP_Server
+Bases counter,Bit0@1,,0x0000,%QX2.0,Modbus_TCP_Server
