@@ -147,9 +147,12 @@ app.geometry("600x300")
 app.resizable(False, False)
 app.configure(bg='lightblue')
 
-image_path = "C:/Users/Duki/codesys-xml-autogen/assets/bg_image.jpg"
-bg_image = Image.open(image_path).convert("RGBA")
+base_dir = os.path.dirname(os.path.abspath(__file__))
+image_path = os.path.normpath(os.path.join(base_dir, '..', 'assets', 'bg_image.jpg'))
+    
+print(f"Trying to open image at: {image_path}")  # Debug print
 
+bg_image = Image.open(image_path).convert("RGBA")
 black_overlay = Image.new("RGBA", bg_image.size, (0, 0, 0, 120))
 tinted_image = Image.alpha_composite(bg_image, black_overlay)
 bg_photo = ImageTk.PhotoImage(tinted_image)
